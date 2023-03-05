@@ -1,0 +1,174 @@
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    box-shadow: 0 0 2px rgb(191, 190, 190);
+    border-radius: 2px;
+    box-sizing: border-box;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+
+}
+
+.search-main {
+
+    margin-left: 100px;
+}
+
+body {
+    background-color: antiquewhite
+}
+
+h5 {
+    text-align: center;
+}
+
+
+
+.container {
+    columns: 3;
+    max-width: 1700px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-weight: 1000;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        column-count: 5;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        column-count: 2;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        column-count: 2;
+    }
+}
+
+.navbar {
+    max-width: 1700px;
+    margin: 0 auto;
+    background-color: rgb(15, 15, 15);
+    box-shadow: 0 0 10px rgb(134, 132, 132);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.trending-bts {
+    justify-items: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.term {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.definition {
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .term,
+    #scroll-text,
+    #scroll-container,
+    .navbar {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .term,
+    #scroll-text,
+    #scroll-container,
+    .navbar {
+        font-size: 0.8em;
+    }
+}
+
+/* Erro refer */
+#scroll-container {
+    overflow: hidden;
+}
+
+#scroll-text {
+    /* animation properties */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation: my-animation 40s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+    from {
+        -moz-transform: translateX(100%);
+    }
+
+    to {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+    from {
+        -webkit-transform: translateX(100%);
+    }
+
+    to {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes my-animation {
+    from {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+
+    to {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+.card {
+    background-color: rgb(252, 252, 252);
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+
+img:hover {
+    opacity: 0.8;
+}
